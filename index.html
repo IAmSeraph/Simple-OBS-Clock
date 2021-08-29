@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <title>A Simple OBS Clock</title>
+    <meta charset="utf-8" lang="en"/>
+    <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
+  </head>
+  <body>
+    <div id="clock"></div>
+    <script>
+      const defaultFormat = "LTS ll";
+      var urlParams;
+      (function () {
+          var matcher,
+              pl = /\+/g,
+              search = /([^&=]+)=?([^&]*)/g,
+              decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+              query = window.location.search.substring(1);
+          urlParams = {};
+          while (matcher = search.exec(query))
+            urlParams[decode(matcher[1])] = decode(matcher[2]);
+      })();
+
+      var clockOutput = document.getElementById("clock");
+      if (urlParams["style"]) clockOutput.setAttribute("style", urlParams["style"]);
+      if (urlParams["bodyStyle"]) document.body.setAttribute("style", urlParams["bodyStyle"]);
+      if (urlParams["locale"]) moment.locale(urlParams["locale"]);
+
+      var runClock;
+      setInterval(
+      runClock = function() {
+        clockOutput.innerText = moment().format(urlParams["format"] || defaultFormat);
+      }, 1000);
+      runClock();
+    </script>
+  </body>
+</html>
