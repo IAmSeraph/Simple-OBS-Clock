@@ -23,3 +23,5 @@ Use `style` to customize the font, size, color, etc
 Use `bodyStyle` to customize the body of the webpage  
 Use `format` to control the output format ([reference](https://momentjs.com/docs/#/displaying/format/))  
 Use `locale` to control the language format ([reference](https://www.science.co.il/language/Locale-codes.php))
+
+The default format is `LTS ll` which shows the timestamp followed by a short date.
