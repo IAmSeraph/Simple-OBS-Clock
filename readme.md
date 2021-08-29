@@ -8,8 +8,6 @@ This edit mainly introduces locales to the original.
 
 # Examples & Usage
 
-Examples
-
   * Vanilla  
     `https://rawcdn.githack.com/IAmSeraph/Simple-OBS-Clock/35c5d6d3b4d0cd97e9bbebfbf1761b3b3ac5266d/index.html`
 
