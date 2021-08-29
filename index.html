@@ -2,21 +2,26 @@
 <html>
   <head>
     <title>A Simple OBS Clock</title>
-    <meta charset="utf-8" lang="en"/>
+    <meta charset="utf-8" lang="en" />
+    <meta name="application-name" content="Simple OBS Clock" />
+    <meta name="description" content="a simple OBS (browser source) clock." />
+    <meta name="author" content="IAmSeraph" />
+    <meta name="keywords" content="OBS, Open Broadcaster Software, Browser Source, Clock" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
   </head>
-  <body>
+  <body translate="no">
     <div id="clock"></div>
-    <script>
+    <script type="application/javascript">
       const defaultFormat = "LTS ll";
       var urlParams;
       (function () {
           var matcher,
-              pl = /\+/g,
+              pattern = /\+/g,
               search = /([^&=]+)=?([^&]*)/g,
-              decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+              decode = function (str) { return decodeURIComponent(str.replace(pattern, " ")); },
               query = window.location.search.substring(1);
-          urlParams = {};
+              urlParams = {};
           while (matcher = search.exec(query))
             urlParams[decode(matcher[1])] = decode(matcher[2]);
       })();
