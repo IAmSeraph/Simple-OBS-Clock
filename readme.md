@@ -25,5 +25,7 @@ Use `format` to control the output format ([reference](https://momentjs.com/docs
 Use `locale` to control the language format ([reference](https://www.science.co.il/language/Locale-codes.php))  
 
 &nbsp;  
-The default format is '`LTS ll`' which shows the timestamp followed by a short date. (if you only want time simply use '`LTS`')  
+The default format is '`LTS ll`' which shows the timestamp followed by a short date.  
+(if you only want time simply use '`LTS`' for format)  
+  
 This webpage supports the use of the [Easy Fonts](https://pagecdn.com/lib/easyfonts) library.  
