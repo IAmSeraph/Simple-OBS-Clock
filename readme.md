@@ -8,8 +8,8 @@ This edit mainly introduces locales and adds more font options.
 
 # Other projects like this
 
-[Simple-OBS-Overlay](https://github.com/IAmSeraph/Simple-OBS-Overlay.git)
-[Simple-OBS-Timer](https://github.com/IAmSeraph/Simple-OBS-Timer.git)
+  * [Simple-OBS-Overlay](https://github.com/IAmSeraph/Simple-OBS-Overlay.git)  
+  * [Simple-OBS-Timer](https://github.com/IAmSeraph/Simple-OBS-Timer.git)  
 
 # Examples & Usage
 
