@@ -6,6 +6,11 @@ A simple webpage to embed current date and timestamp in your video/stream.
 Original made by [@sam0737](https://gist.github.com/sam0737/a0ee8ca253fc5c84b2aa2ac018f7b8ad).  
 This edit mainly introduces locales and adds more font options.  
 
+# Other projects like this
+
+[Simple-OBS-Overlay](https://github.com/IAmSeraph/Simple-OBS-Overlay.git)
+[Simple-OBS-Timer](https://github.com/IAmSeraph/Simple-OBS-Timer.git)
+
 # Examples & Usage
 
   * Vanilla  
